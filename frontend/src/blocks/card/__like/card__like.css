@@ -1,0 +1,11 @@
+.card__like {
+  width: 22px;
+  height: 19px;
+  background-size: cover;
+  background-image: url(../../../images/vector-heart-white.svg);
+  align-self: flex-end;
+}
+
+.card__like:hover {
+  opacity: .5;
+}

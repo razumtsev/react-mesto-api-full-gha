@@ -1,0 +1,14 @@
+.gatekeeper__title {
+  margin: 60px 0 20px;
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 29px;
+}
+
+@media screen and (max-width: 618px) {
+  .gatekeeper__title {
+    margin: 40px 0 10px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+}

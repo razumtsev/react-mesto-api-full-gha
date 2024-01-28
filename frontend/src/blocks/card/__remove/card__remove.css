@@ -1,0 +1,9 @@
+.card__remove {
+  width: 18px;
+  height: 19px;
+  background-image: url(../../../images/vector-trashcan.svg);
+  background-size: cover;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}

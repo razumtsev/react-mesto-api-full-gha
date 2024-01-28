@@ -1,0 +1,11 @@
+.form__submit-button_is-inactive {
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #000;
+  opacity: .2;
+}
+
+.form__submit-button_is-inactive:hover {
+  opacity: .2;
+  cursor: default;
+}

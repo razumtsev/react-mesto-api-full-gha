@@ -1,0 +1,12 @@
+.gatekeeper__link {
+  margin: 15px auto 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+}
+
+@media screen and (max-width: 618px) {
+  .gatekeeper__link {
+    margin-top: 20px;
+  }
+}

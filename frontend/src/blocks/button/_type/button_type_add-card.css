@@ -1,0 +1,15 @@
+.button_type_add-card {
+  width: 150px;
+  height: 50px;
+  border: 2px solid #fff;
+  border-radius: 2px;
+  background-image: url(../../../images/vector-cross.svg);
+  background-size: 22px 22px;
+}
+
+@media screen and (max-width: 618px) {
+  .button_type_add-card {
+    width: 282px;
+    background-size: 16px 16px;
+  }
+}

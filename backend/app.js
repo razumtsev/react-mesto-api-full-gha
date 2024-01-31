@@ -3,6 +3,7 @@ require('dotenv').config();
 const express = require('express');
 const mongoose = require('mongoose');
 const { rateLimit } = require('express-rate-limit');
+const cors = require('cors');
 const helmet = require('helmet');
 const { errors } = require('celebrate');
 const appRouter = require('./routes');
@@ -24,6 +25,8 @@ mongoose.connect(`mongodb://127.0.0.1:27017/${databaseName}`, {
 const app = express();
 
 const limiter = rateLimit(rateLimitSettings);
+
+app.use(cors());
 
 app.use(express.json());
 

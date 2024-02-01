@@ -3,9 +3,9 @@ require('dotenv').config();
 const express = require('express');
 const mongoose = require('mongoose');
 const { rateLimit } = require('express-rate-limit');
-const cors = require('cors');
 const helmet = require('helmet');
 const { errors } = require('celebrate');
+const cors = require('./middlewares/cors');
 const appRouter = require('./routes');
 const rateLimitSettings = require('./utils/rateLimitSettings');
 const errorHandler = require('./middlewares/errorHandler');
@@ -26,13 +26,12 @@ const app = express();
 
 const limiter = rateLimit(rateLimitSettings);
 
-app.use(cors());
-
 app.use(express.json());
 
 app.use(limiter);
 app.use(helmet());
 
+app.use(cors);
 app.use(requestLogger);
 app.use(appRouter);
 
